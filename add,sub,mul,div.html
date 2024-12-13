@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculator</h1>
+    <blockquote>
+        <input type="text" id="num1"> <br>
+        <input type="text" id="num2"> <br>
+        <button onclick="addNumber()">ADD</button><br>
+        <input type="text" id="result1" disabled>
+    </blockquote>
+    <script>
+        function addNumber(){
+            let x = parseInt(document.getElementById("num1").value);
+            let y = parseInt(document.getElementById("num2").value);
+            let rs = x+y
+            document.getElementById('result1').value = rs
+        }
+    </script>
+
+
+<blockquote>
+    <input type="text" id="num1"> <br>
+    <input type="text" id="num2"> <br>
+    <button onclick="subNumber()">Subtract</button><br>
+    <input type="text" id="result2" disabled>
+</blockquote>
+<script>
+    function subNumber(){
+        let x = parseInt(document.getElementById("num1").value);
+        let y = parseInt(document.getElementById("num2").value);
+        let rs = x-y
+        document.getElementById('result2').value = rs}
+    
+</script>
+
+
+
+<blockquote>
+    <input type="text" id="num1"> <br>
+    <input type="text" id="num2"> <br>
+    <button onclick="mulNumber()">multiply</button><br>
+    <input type="text" id="result3" disabled>
+</blockquote>
+<script>
+    function mulNumber(){
+        let x = parseInt(document.getElementById("num1").value);
+        let y = parseInt(document.getElementById("num2").value);
+        let rs = x*y
+        document.getElementById('result3').value = rs
+    }
+</script>
+
+
+<blockquote>
+    <input type="text" id="num1"> <br>
+    <input type="text" id="num2"> <br>
+    <button onclick="divNumber()">divide</button><br>
+    <input type="text" id="result4" disabled>
+</blockquote>
+<script>
+    function divNumber(){
+        let x = parseInt(document.getElementById("num1").value);
+        let y = parseInt(document.getElementById("num2").value);
+        let rs = x/y
+        document.getElementById('result4').value = rs
+    }
+</script>
+    
+
+</body>
+</html>
